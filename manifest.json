@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Gemini Auto Imager",
+    "version": "1.0",
+    "description": "Automated stock image generation loop for Gemini.",
+    "permissions": [
+        "scripting",
+        "downloads"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gemini.google.com/*",
+                "https://business.gemini.google/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
